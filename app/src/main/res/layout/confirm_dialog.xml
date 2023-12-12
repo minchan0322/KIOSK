@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="900dp"
+    android:layout_height="500dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/confirmMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="100dp"
+            android:textSize="60dp"
+            android:text="menu"/>
+
+        <TextView
+            android:id="@+id/confirmText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="해당 메뉴가 맞나요?"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/yesCon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="예"
+                android:textSize="30dp"
+                android:background="@drawable/rounded_button_bg"/>
+            <Button
+                android:id="@+id/noCon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="아니오"
+                android:textSize="30dp"
+                android:background="@drawable/rounded_button_bg"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

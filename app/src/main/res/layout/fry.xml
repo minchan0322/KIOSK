@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/back"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="튀김류"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/chicken"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/fry_1"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/potato"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/fry_2"
+                    android:background="@android:color/transparent"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:id="@+id/fishT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="치킨            18,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/bodeaT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="감자 튀김         7,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/shrimp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/fry_3"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/squid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/fry_4"
+                    android:background="@android:color/transparent"/>
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:id="@+id/saeu"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="새우튀김          9,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/oging"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="오징어 튀김     6,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/yache"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/fry_5"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/goguma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/fry_6"
+                    android:background="@android:color/transparent"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:id="@+id/fry5"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="야채 튀김         9,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/fry6"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="고구마 튀김     5,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

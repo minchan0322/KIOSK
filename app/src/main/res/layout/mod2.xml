@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/changemod"
+            android:layout_width="900dp"
+            android:layout_height="450dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text=" 모드로 변경하시겠습니까?"
+            android:textSize="50dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="900dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="예"
+                android:textSize="30dp"
+                android:background="@drawable/rounded_button_bg"/>
+            <Button
+                android:id="@+id/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="아니오"
+                android:textSize="30dp"
+                android:background="@drawable/rounded_button_bg"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

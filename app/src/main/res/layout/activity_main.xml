@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--상단 메뉴-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_margin="21dp">
+
+        <TextView
+            android:id="@+id/tableNo"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="01   "
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="90dp" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="직원 호출"
+            android:textSize="40dp"
+            android:background="@drawable/rounded_button_bg2"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/basket"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="장바구니"
+            android:textSize="40dp"
+            android:background="@drawable/rounded_button_bg2"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="주문 내역"
+            android:textSize="40dp"
+            android:background="@drawable/rounded_button_bg2"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/mod"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="상태 변경"
+            android:textSize="40dp"
+            android:background="@drawable/rounded_button_bg2"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--좌측 메뉴-->
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_margin="22dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/rounded_button_bg2"
+                android:text="주 메뉴"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/side"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/rounded_button_bg2"
+                android:text="곁들임"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/drink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/rounded_button_bg2"
+                android:text="주류"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/rounded_button_bg2"
+                android:text="기타"
+                android:textSize="40dp" />
+
+            <ImageButton
+                android:id="@+id/mic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.7"
+                android:adjustViewBounds="true"
+                android:background="@drawable/rounded_button_bg2"
+                android:maxHeight="60dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/mic" />
+
+        </LinearLayout>
+
+        <!--ㅇㅇ-->
+        <FrameLayout
+            android:id="@+id/kiosk_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </FrameLayout>
+        <!--ㅇㅇ-->
+
+    </LinearLayout>
+
+</LinearLayout>

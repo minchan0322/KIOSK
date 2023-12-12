@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/back"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="볶음류"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/nakgi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/stir_1"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/sosegi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/stir_2"
+                    android:background="@android:color/transparent"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:id="@+id/nakgiT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="낚지볶음      18,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/sosegiT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="소세지 볶음    9,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/pigbok"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/stir_3"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/oging"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/stir_4"
+                    android:background="@android:color/transparent"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:id="@+id/pigbokT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="삼겹볶음      16,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/ogingT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="오징어 볶음   12,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/jeyuk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/stir_5"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/gamja"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/stir_6"
+                    android:background="@android:color/transparent"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:id="@+id/jeyukT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="제육볶음       12,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/gamjaT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="감자 볶음        6,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

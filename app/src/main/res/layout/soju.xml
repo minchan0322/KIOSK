@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/back"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="소주"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/fresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/fresh_size"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/first"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/first_size"
+                    android:background="@android:color/transparent"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:id="@+id/freshT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="참이슬          5,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/firstT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="처음처럼      5,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/freshred"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/freshred_size"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/jinro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/jinro_size"
+                    android:background="@android:color/transparent"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:id="@+id/freshredT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="참이슬 오리지널 5,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/jinroT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="진로            5,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow>
+                <ImageButton
+                    android:id="@+id/searo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/searo_size"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/chungha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/chungha_size"
+                    android:background="@android:color/transparent"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:id="@+id/searoT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="새로            5,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/chunghaT"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="청하            5,000원"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

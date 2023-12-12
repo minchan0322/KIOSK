@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TableRow
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/soju"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/soju_size"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소주 "
+                android:textSize="90dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="right|bottom"
+                />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/beer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/beer_size"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="맥주 "
+                android:textSize="90dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="right|bottom"
+                />
+
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/makgeolli"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/makgeolli_size"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="막걸리 "
+                android:textSize="90dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="right|bottom"
+            />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/otherdrink"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/drink_size"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="음료 / 기타 "
+                android:textSize="90dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="right|bottom"
+                />
+
+        </FrameLayout>
+    </TableRow>
+
+</TableLayout>
